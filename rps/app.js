@@ -3,7 +3,7 @@ function getRndInteger(min, max, choice) {
     let n1 = Math.floor(Math.random() * (max - min)) + min;
     let n2 = choice;
 	
-    console.log(n2);
+    console.log("n2: " + n2);
     
     //Number(n2 = 1)
     if (n1 == n2) {
@@ -34,7 +34,7 @@ function getRndInteger(min, max, choice) {
         end = 1; // loose
         return end;
     }
-    console.log(end);
+    console.log("end: " + end);
     if (n2 == 1) {
         document.getElementById("RPS").src="rock.png";
     }
