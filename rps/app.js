@@ -1,7 +1,7 @@
 function getRndInteger(min, max, choice) {
-          	Number(end = 0)
-	        Number(n1 = Math.floor(Math.random() * (max - min)) + min);
-          	Number(n2 = choice);
+          	let end = 0;
+	        let n1 = Math.floor(Math.random() * (max - min)) + min;
+          	let n2 = choice;
 	        console.log(n2);
           //Number(n2 = 1)
           if(n1 == n2){
@@ -32,15 +32,15 @@ function getRndInteger(min, max, choice) {
     	      end = 1; // lose
     	      return end;
           }
-	console.log(end)
+	console.log(end);
 	if(n2 == 1){
-		onclick="document.getElementById('RPS').src='rock.png';
+		onclick="document.getElementById('RPS').src='rock.png'";
 	}
 	if(n2 == 2){
-		onclick="document.getElementById('RPS').src='paper.png';
+		onclick="document.getElementById('RPS').src='paper.png'";
 	}
 	if(n2 == 3){
-		onclick="document.getElementById('RPS').src='scissors.png';
+		onclick="document.getElementById('RPS').src='scissors.png'";
 	}
         }
         
