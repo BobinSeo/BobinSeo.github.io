@@ -9,6 +9,7 @@ let roundsToPlay = 3;
 	document.getElementById("ourscore").innerHTML = ourscore;
         document.getElementById("opponentscore").innerHTML = opponentscore;
 	roundsPlayed = 0;
+	end = 0;
 }
 
 function rounds(rounds){
