@@ -37,13 +37,25 @@ function getRndInteger(min, max, choice) {
     }
     console.log("end: " + end);
     if (n2 == 1) {
-        document.getElementById("RPS").src="rock.png
+        document.getElementById("RPS").src="rock.png";
     }
     if (n2 == 2) {
         document.getElementById("RPS").src="paper.png";
     }
     if (n2 == 3) {
         document.getElementById("RPS").src="scissors.png";
+    }
+	
+	
+	
+     if (n1 == 1) {
+        document.getElementById("opponent").src="rock.png";
+    }
+    if (n1 == 2) {
+        document.getElementById("opponent").src="paper.png";
+    }
+    if (n1 == 3) {
+        document.getElementById("opponent").src="scissors.png";
     }
 	
 	
