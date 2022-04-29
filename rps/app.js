@@ -21,6 +21,10 @@ function getRndInteger(min, max, choice) {
     let opponent = Math.floor(Math.random() * (max - min)) + min;
     let player = choice;
 	
+	document.getElementById("rockButton").disabled = true;
+	document.getElementById("paperButton").disabled = true; 
+	document.getElementById("scissorsButton").disabled = true; 
+	
     console.log("n2: " + player);
     console.log("opponent: " + opponent);
 	
@@ -116,7 +120,10 @@ function getRndInteger(min, max, choice) {
 			
 	}
     
-
+	document.getElementById("rockButton").disabled = false;
+	document.getElementById("paperButton").disabled = false; 
+	document.getElementById("scissorsButton").disabled = false; 
+		
 	}, 1300);
 
 	
