@@ -38,8 +38,10 @@ function getRndInteger(min, max, choice) {
         end = 1; // lose
 
     }
-    console.log("end: " + end);
-    if (player == 1) {
+	
+	
+    setTimeout(function(){
+	    if (player == 1) {
         document.getElementById("RPS").src="rock.png";
     }
     if (player == 2) {
@@ -73,6 +75,7 @@ function getRndInteger(min, max, choice) {
 	
     document.getElementById("ourscore").innerHTML = ourscore;
     document.getElementById("opponentscore").innerHTML = opponentscore;
+    }, 1000);
 	
     
 	
