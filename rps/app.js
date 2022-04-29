@@ -100,12 +100,12 @@ function getRndInteger(min, max, choice) {
 	if (roundsPlayed == roundsToPlay) {
 		if (ourscore > opponentscore) {
 			//user gewinnt
-			alert("Du hast gewonnen!");
+			
 			restart();
 		}
 		if (ourscore < opponentscore) {
 			//user verliert
-			alert("Du hast leider verloren!");
+			
 			restart();
 		}
 			
