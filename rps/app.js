@@ -1,6 +1,11 @@
 let ourscore = 0;
 let opponentscore = 0;
 
+ function restart(){
+	ourscore = 0;
+        opponentscore = 0;
+}
+
 function getRndInteger(min, max, choice) {
     let end = 0;
     let opponent = Math.floor(Math.random() * (max - min)) + min;
