@@ -1,17 +1,18 @@
 let ourscore = 0;
 let opponentscore = 0;
-let roundsplayed = 0;
-let roundstoplay = 3;
+let roundsPlayed = 0;
+let roundsToPlay = 3;
 
  function restart(){
 	ourscore = 0;
         opponentscore = 0;
 	document.getElementById("ourscore").innerHTML = ourscore;
         document.getElementById("opponentscore").innerHTML = opponentscore;
+	roundsPlayed = 0;
 }
 
 function rounds(rounds){
-	roundstoplay = rounds;
+	roundsToPlay = rounds;
 	
 }
 function getRndInteger(min, max, choice) {
@@ -92,7 +93,22 @@ function getRndInteger(min, max, choice) {
     document.getElementById("ourscore").innerHTML = ourscore;
     document.getElementById("opponentscore").innerHTML = opponentscore;
     }, 1300);
+
+	roundsPlayed = roundsPlayed +1;
 	
+	if (roundsPlayed == roundsToPlay) {
+		if (ourscore > opponentscore) {
+			//user gewinnt
+			alert("Du hast gewonnen!");
+			restart();
+		}
+		if (ourscore > opponentscore) {
+			//user verliert
+			alert("Du hast leider verloren!");
+			restart();
+		}
+			
+	}
     
 	
 	
