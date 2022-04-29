@@ -102,7 +102,7 @@ function getRndInteger(min, max, choice) {
 			alert("Du hast gewonnen!");
 			restart();
 		}
-		if (ourscore > opponentscore) {
+		if (ourscore < opponentscore) {
 			//user verliert
 			alert("Du hast leider verloren!");
 			restart();
