@@ -1,5 +1,7 @@
 let ourscore = 0;
 let opponentscore = 0;
+let roundsplayed = 0;
+let roundstoplay = 3;
 
  function restart(){
 	ourscore = 0;
@@ -8,6 +10,10 @@ let opponentscore = 0;
         document.getElementById("opponentscore").innerHTML = opponentscore;
 }
 
+function rounds(rounds){
+	roundstoplay = rounds;
+	
+}
 function getRndInteger(min, max, choice) {
     let end = 0;
     let opponent = Math.floor(Math.random() * (max - min)) + min;
