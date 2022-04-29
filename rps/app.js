@@ -58,11 +58,8 @@ function getRndInteger(min, max, choice) {
 	document.getElementById("opponent").src = "";
 	
 	
-    //setTimeout(function(){
+ 
 	setTimeout(function(){
-   	console.log("Hello World");
-	}, 2000);
-	
 	if (player == 1) {
         document.getElementById("RPS").src="rock.png";
     }
@@ -104,18 +101,23 @@ function getRndInteger(min, max, choice) {
 	if (roundsPlayed == roundsToPlay) {
 		if (ourscore > opponentscore) {
 			//user gewinnt
-			
-			restart();
+			setTimeout(function(){
+				alert("Du hast gewonnen!");
+				restart();
+			}, 2000);
 		}
 		if (ourscore < opponentscore) {
 			//user verliert
-			
-			restart();
+			setTimeout(function(){
+				alert("Du hast leider verloren!");
+				restart();
+			}, 2000);
 		}
 			
 	}
     
-  //  }, 1300);
+
+	}, 1300);
 
 	
 	
