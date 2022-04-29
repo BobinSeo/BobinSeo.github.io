@@ -84,7 +84,8 @@ function getRndInteger(min, max, choice) {
         opponentscore += 1;
     }
     if (end == 2) {
-        
+	opponentscore += 1;
+        ourscore += 1;
     }
     if (end== 3) {
         ourscore += 1;
