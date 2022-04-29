@@ -103,17 +103,11 @@ function getRndInteger(min, max, choice) {
 	    roundsPlayed = roundsPlayed +1;
 	
 	if (roundsPlayed == roundsToPlay) {
-		document.getElementById("rockButton").disabled = true;
-		document.getElementById("paperButton").disabled = true; 
-		document.getElementById("scissorsButton").disabled = true; 
 		if (ourscore > opponentscore) {
 			//user gewinnt
 			setTimeout(function(){
 				alert("Du hast gewonnen!");
 				restart();
-				document.getElementById("rockButton").disabled = false;
-				document.getElementById("paperButton").disabled = false;
-				document.getElementById("scissorsButton").disabled = false;
 			}, 2000);
 		}
 		if (ourscore < opponentscore) {
@@ -121,9 +115,6 @@ function getRndInteger(min, max, choice) {
 			setTimeout(function(){
 				alert("Du hast leider verloren!");
 				restart();
-				document.getElementById("rockButton").disabled = false;
-				document.getElementById("paperButton").disabled = false;
-				document.getElementById("scissorsButton").disabled = false;
 			}, 2000);
 		}
 			
