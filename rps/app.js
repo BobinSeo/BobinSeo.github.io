@@ -39,6 +39,9 @@ function getRndInteger(min, max, choice) {
 
     }
 	
+	document.getElementById("RPS").src = "XVo6.gif";
+	document.getElementById("opponent").src = "";
+	
 	
     setTimeout(function(){
 	    if (player == 1) {
