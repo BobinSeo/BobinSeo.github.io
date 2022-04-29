@@ -2,6 +2,8 @@ function getRndInteger(min, max, choice) {
     let end = 0;
     let opponent = Math.floor(Math.random() * (max - min)) + min;
     let player = choice;
+    let ourscore = 0;
+    let opponentscore = 0;
 	
     console.log("n2: " + player);
     console.log("opponent: " + opponent);
@@ -48,7 +50,7 @@ function getRndInteger(min, max, choice) {
 	
 	
 	
-     if (opponent == 1) {
+    if (opponent == 1) {
         document.getElementById("opponent").src="rock.png";
     }
     if (opponent == 2) {
@@ -57,6 +59,21 @@ function getRndInteger(min, max, choice) {
     if (opponent == 3) {
         document.getElementById("opponent").src="scissors.png";
     }
+	
+    if (end == 1) {
+        opponentscore += 1;
+    }
+    if (end == 2) {
+        
+    }
+    if (end== 3) {
+        ourscore += 1;
+    }
+	
+    document.getElementById("ourscore").innerHTML = ourscore;
+    document.getElementById("opponentscore").innerHTML = opponentscore;
+	
+    
 	
 	
 	
