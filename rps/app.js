@@ -9,7 +9,7 @@ let roundsToPlay = 3;
 	document.getElementById("ourscore").innerHTML = ourscore;
         document.getElementById("opponentscore").innerHTML = opponentscore;
 	roundsPlayed = 0;
-	end = 0;
+	
 }
 
 function rounds(rounds){
@@ -94,9 +94,8 @@ function getRndInteger(min, max, choice) {
 	
     document.getElementById("ourscore").innerHTML = ourscore;
     document.getElementById("opponentscore").innerHTML = opponentscore;
-    }, 1300);
-
-	roundsPlayed = roundsPlayed +1;
+    
+	    roundsPlayed = roundsPlayed +1;
 	
 	if (roundsPlayed == roundsToPlay) {
 		if (ourscore > opponentscore) {
@@ -112,6 +111,8 @@ function getRndInteger(min, max, choice) {
 			
 	}
     
+    }, 1300);
+
 	
 	
 	
