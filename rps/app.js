@@ -4,6 +4,8 @@ let opponentscore = 0;
  function restart(){
 	ourscore = 0;
         opponentscore = 0;
+	document.getElementById("ourscore").innerHTML = ourscore;
+        document.getElementById("opponentscore").innerHTML = opponentscore;
 }
 
 function getRndInteger(min, max, choice) {
