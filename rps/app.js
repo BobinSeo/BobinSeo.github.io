@@ -4,7 +4,9 @@ function getRndInteger(min, max, choice) {
     let n2 = choice;
 	
     console.log("n2: " + n2);
-    
+    console.log("n1: " + n1);
+	
+
     //Number(n2 = 1)
     if (n1 == n2) {
         end = 2; // gleichstand
@@ -35,7 +37,7 @@ function getRndInteger(min, max, choice) {
     }
     console.log("end: " + end);
     if (n2 == 1) {
-        document.getElementById("RPS").src="rock.png";
+        document.getElementById("RPS").src="rock.png
     }
     if (n2 == 2) {
         document.getElementById("RPS").src="paper.png";
