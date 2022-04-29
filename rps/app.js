@@ -1,9 +1,10 @@
+let ourscore = 0;
+let opponentscore = 0;
+
 function getRndInteger(min, max, choice) {
     let end = 0;
     let opponent = Math.floor(Math.random() * (max - min)) + min;
     let player = choice;
-    let ourscore = 0;
-    let opponentscore = 0;
 	
     console.log("n2: " + player);
     console.log("opponent: " + opponent);
