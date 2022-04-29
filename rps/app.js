@@ -58,8 +58,12 @@ function getRndInteger(min, max, choice) {
 	document.getElementById("opponent").src = "";
 	
 	
-    setTimeout(function(){
-	    if (player == 1) {
+    //setTimeout(function(){
+	setTimeout(function(){
+   	console.log("Hello World");
+	}, 2000);
+	
+	if (player == 1) {
         document.getElementById("RPS").src="rock.png";
     }
     if (player == 2) {
@@ -111,7 +115,7 @@ function getRndInteger(min, max, choice) {
 			
 	}
     
-    }, 1300);
+  //  }, 1300);
 
 	
 	
