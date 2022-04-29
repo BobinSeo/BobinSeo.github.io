@@ -78,7 +78,7 @@ function getRndInteger(min, max, choice) {
 	
     document.getElementById("ourscore").innerHTML = ourscore;
     document.getElementById("opponentscore").innerHTML = opponentscore;
-    }, 1400);
+    }, 1350);
 	
     
 	
